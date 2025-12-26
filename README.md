@@ -14,3 +14,22 @@ Client-side factors:
 
 Server-side factor:
 - http [Access-Control-Allow-Origin](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin)
+
+## Installation
+
+One site (frontend) hosts the webpage trying to get access to cross-orrigin resources. Another (cross-origin) site (backend) hosts (javascript) resources.
+
+### Netlify
+
+If using netlify as a host, setup two separate projects: one for frontend, one for backend.
+
+#### frontend
+
+Assuming project name is `cors-example`, set `Base directory` to `/frontend` in the [deploy configuration settings](https://app.netlify.com/projects/cors-example/configuration/deploys).
+
+> [!note]
+> `Build command` can be a no-op, since frontend is only made of static assets.
+
+#### backend
+
+Assuming project name is `cors-server`, set `Base directory` to `/backend` in the [deploy configuration settings](https://app.netlify.com/projects/cors-server/configuration/deploys).
