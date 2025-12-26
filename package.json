@@ -1,0 +1,19 @@
+{
+  "name": "cors-example",
+  "version": "1.0.0",
+  "description": "Examples demonstrating Cross-Origin Resource Sharing (CORS). View [live](https://cors-example.netlify.app/).",
+  "homepage": "https://github.com/swiing/cors-example#readme",
+  "bugs": {
+    "url": "https://github.com/swiing/cors-example/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swiing/cors-example.git"
+  },
+  "license": "ISC",
+  "author": "swiing",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}

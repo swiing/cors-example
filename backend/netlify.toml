@@ -1,0 +1,19 @@
+[build]
+  command = "bash install.sh"
+  publish = "public/"
+
+# [dev]
+  # framework = "#custom"
+  # command = "bash install.sh"
+  # publish = "public/"
+  # targetPort = 3999
+  
+[[headers]]
+  for = "/js-whitelist/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "https://cors-example.netlify.app"
+
+[[headers]]
+  for = "/js-public/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
